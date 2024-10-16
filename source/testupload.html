@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel='shortcut icon' href='./icon/music.ico' />
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary addMusicBtn">
+        Add modal
+      </button>
+      <script>
+        $(function(){
+            $(".addMusicBtn").click(function(e){
+                e.preventDefault();
+                console.log('a');
+                $("#addMusicModal").modal({
+                    backdrop: 'static',
+                    keyboard: false
+                });
+            })
+        });
+      </script>
+<!--Form add song-->
+    
+        
+        
+
+        
+    <!--Modal-->
+    <div id="addMusicModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <form class="form" action="api/upload.php" method="post" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Thêm Bài Hát</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label"  for="songName">Tên bài hát: </label>
+                            <input class="form-control"  type="text" name="songName" id="songName" placeholder="Nhập tên bài hát">
+                        </div>
+                
+                        <div class="mb-3">
+                            <label class="form-label"  for="singerName">Tên ca sĩ: </label>
+                            <select class="form-control" id="singerName" name="singerName">
+                                <option value="Sơn Tùng MTP">Sơn Tùng MTP</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label  class="form-label" for="type">Thể loại: </label>
+                            <select class="form-control" name="category" id="category">
+                                <option value="Pop">Pop</option>
+                            </select>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label  class="form-label" for="lyrics">Lyrics: </label>
+                            <textarea class="form-control" type="text" name="lyrics" id="lyrics" placeholder="Nhập lời bài hát"></textarea>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label  class="form-label" for="description">Description: </label>
+                            <textarea class="form-control"name="description" id="description" cols="30" rows="10" maxlength="50" placeholder="Nhập mô tả"></textarea>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label  class="form-label" for="fileImage">Hình: </label>
+                            <input class="form-control" type="file" name="fileImage" id="fileImage">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label  class="form-label" for="fileMusic">Chọn file nhạc: </label>
+                            <input class="form-control" type="file" name="fileMusic" id="fileMusic">
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <input class="btn btn-primary" type="submit" value="Thêm nhạc" name="submit">
+                    </div>
+
+                </div>
+            </form>
+            <!-- Modal content-->
+        </div>
+    </div>
+</body>
+
+</html>

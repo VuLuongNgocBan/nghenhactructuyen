@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(251, 150, 194);
+	background: radial-gradient(circle, rgba(251, 150, 194, 1) 7%, rgba(136, 183, 240, 1) 94%);
+}
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #000000 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #00e1ff;
+	border-radius: 10px;
+	border: 3px solid #ffffff;
+}
+.container {
+	overflow: hidden;
+}
+.content-table {
+	height: 100vh;
+	overflow: scroll;
+}
+
+.side-part,
+.content-part {
+	height: 100vh;
+	/* box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2); */
+	background: rgb(238, 174, 202);
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.side-content {
+	cursor: pointer;
+}
+.side-content p {
+	padding: 8px 16px;
+}
+.side-logo {
+	margin-top: 16px;
+}
+.side-content p:hover {
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.side-logout a {
+	padding: 8px 16px;
+	text-decoration: none;
+	color: #000;
+}
+.side-logout a:hover {
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+	text-decoration: none !important;
+	cursor: pointer !important;
+	color: #000;
+}
+.content-part {
+}
+
+.content-header {
+	margin-top: 16px;
+	display: inline-block;
+}
+.content-part .add-btn {
+	display: inline-block;
+	margin-left: 16px;
+	margin-bottom: 4px;
+}
+.musicManagerError {
+	font-size: 14px;
+	color: green;
+}

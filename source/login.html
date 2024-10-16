@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/login.css" />
+		<link rel='shortcut icon' href='./icon/music.ico' />
+		<title>Login to Music page</title>
+	</head>
+	<body>
+		<div class="login-form" id="login-form">
+			<form method="post" class="form-control login" id="login">
+				<div class="container">
+					<h1>Login</h1>
+					<div class="login-body">
+						<div class="username">
+							<label for="">Username</label>
+							<input type="text" name="userName" id="userName" />
+						</div>
+						<div class="password">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" />
+						</div>
+						<div class="login-btn">
+							<button type="submit">Log In</button>
+						</div>
+
+						<div class="registAcc">
+							You not have account yet? <br />
+							<a id="register">Register now?</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="register" id="register-form">
+			<form method="post" class="register-form">
+				<h1>Register</h1>
+				<div class="username">
+					<label for="name">Name</label>
+					<input type="text" name="name-regist" id="name-regist" required/>
+				</div>
+				<div class="username">
+					<label for="username">Username</label>
+					<input type="text" name="username-regist" id="username-regist" />
+				</div>
+				<div class="email">
+					<label for="">Email</label>
+					<input type="email" name="email-regist" id="email-regist" />
+				</div>
+				<div class="password">
+					<label for="password">Password</label>
+					<input type="text" name="password-regist" id="password-regist" />
+					<br />
+					<label for="confirm-password">Confirm Password</label>
+					<input type="text" name="confirm-password-regist" id="confirm-password-regist" />
+				</div>
+				<!-- <div class="error-field mb-1" style="display: none">Vui lòng điển đầy đủ thông tin!</div> -->
+				<div class="regist-btn">
+					<button>Register</button>
+				</div>
+				<div class="already-acc">You already have account? <a id="login-btn">Log In</a></div>
+				<div class="error-msg mb-1" style="display: block"></div>
+			</form>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script src="./js/login.js"></script>
+</html>

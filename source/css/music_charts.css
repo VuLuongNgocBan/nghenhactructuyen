@@ -1,0 +1,343 @@
+
+
+  
+  
+
+  
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+}
+html {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	height: 2000px;
+	background: rgb(251, 150, 194);
+	background: radial-gradient(circle, rgba(251, 150, 194, 1) 7%, rgba(136, 183, 240, 1) 94%);
+}
+/* css general */
+.icon-size {
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: 50% !important;
+}
+/* ./css general */
+/* navbar */
+.navbar {
+	box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	background: rgb(238, 174, 202);
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.navbar .search {
+	width: 50%;
+	padding: 8px 16px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+.navbar input {
+	width: 90%;
+	border: none;
+}
+.navbar input:focus {
+	outline: none;
+}
+.nav-right .user-avatar {
+	width: fit-content;
+	display: inline;
+}
+.nav-right {
+	width: fit-content;
+}
+.nav-right .img-user {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+
+.left-body .left-body-container, .right-body .right-body-container {
+	height: fit-content;
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+}
+.left-body-container, .right-body-container {
+	padding: 16px 24px;
+}
+
+.leftBody-title {
+	font-weight: 600;
+}
+.left-body-container .list-option li {
+	margin: 12px 0;
+	padding: 4px 0;
+	cursor: pointer;
+}
+/* ./body-left */
+/* body-right */
+.right-body-container .singer {
+	margin: 12px 0;
+	padding: 8px 16px;
+}
+
+
+
+
+
+
+.background{
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-purple-minimalist-music-note-banner-background-image_210612.jpg');
+    background-repeat:  no-repeat;
+    background-size: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
+/* ./body-right */
+.img-song img {
+	width: 180px;
+	height: 180px;
+	border-radius: 10%;
+	margin-left: -20px;
+}
+.song-text {
+	margin-top: 40px;
+	margin-left:20px;
+	font-size: 20px;
+}
+.top1-text{
+	
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.top1-text .info-top1{
+	text-align: left;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 30px;
+
+}
+
+.top1{
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top20{
+	margin-left: 120px;
+	
+}
+.cur-singer-detail {
+	height: fit-content;
+	/* display: flex; */
+	/* margin: 8px; */  
+	border-radius: 10px;
+	box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cur-singer-detail .song-info {
+	width: 100%;
+}
+.body-cur .row:first-child {
+	display: flex;
+	margin: 10px;
+	/* width: 80%;
+	height: 80%; */
+	/* align-items: center; */
+	/* justify-content: space-between;
+	align-items: center; */
+}
+.cur-singer-detail .charts-text {
+	margin-top: 55px;
+	font-size: 50px;
+	font-style: bold;
+    color: #f3f1f5;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif	;
+
+}
+.singer-birth {
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.play-button{
+	
+	
+	
+}
+.story{
+	margin-top: 40px;
+	
+}
+.singer-des{
+	margin-top: 20px;
+	font-size: 17px;
+	margin-left: 20px;
+}
+
+.singer-button{
+	margin-top: 15px;
+	/* margin-right: 25px;
+	margin-left: 20px; */
+	height: 60px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.1);
+}
+
+.follow-button{
+	margin-top: 50px;
+}
+.info{
+	/* margin-right: 150px; */
+	margin-top: 18px;
+	/* margin-left: 10px; */
+}
+
+
+	
+.cur-singer-detail .singer-list .download-btn {
+	margin-right: 8px;
+}
+.top-music {
+	padding-top: 16px;
+}
+.list-option {
+	list-style: none;
+}
+.popular-song{
+	margin-top: 50px;
+}
+
+
+.song-list {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 35px;
+
+}
+
+.song-list:hover,
+.right-body-container .singer:hover {
+	border-radius: 10px;
+	box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.song-list .song-name {
+	font-weight: 600;
+	font-size: 18px;
+}
+.song-list .song-icon {
+	display: inline-block;
+}
+.song-logo{
+	height: 50px;
+
+}
+.number{
+	font-size: 35px;
+	font-weight: bolder;
+	color: #722bcd;
+	margin-left: 25px;
+	
+	
+}
+.dash{
+	font-size: 30px;
+	font-weight:bolder ;
+	color: #a58db7;
+	
+}
+.top20-button{
+	margin-top: 15px;
+	
+}
+#heart {
+	margin-right: 70px;
+}
+
+
+
+/* list top song */
+.list-top-song .list-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.list-top-song img {
+	width: 150px;
+	height: 150px;
+	border-radius: 8px;
+}
+/* ./list top song */
+/* Footer */
+.footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 72px;
+	background: rgb(238, 174, 202);
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+	box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.2);
+}
+.footer-body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer .song-info {
+	display: flex;
+	align-items: center;
+	margin-right: 64px;
+}
+.footer .song-info img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.footer .song-author,
+.footer .song-name {
+	margin-left: 8px;
+}
+.footer .music-status {
+	/* width: 20%;
+	height: 20%; */
+	text-align: center;
+	width: 50%;
+	user-select: none;
+}
+.footer .music-timer input {
+	width: 100%;
+}
+.footer .music-option {
+	height: 100%;
+}
+.footer .music-option .option-btn {
+	display: inline-block;
+}
+.footer .music-option .option-btn:hover {
+	cursor: pointer;
+}
+.footer .music-option .option-btn i {
+	margin: auto 12px;
+	font-size: 30px;
+}
+/* ./Footer */

@@ -1,0 +1,11 @@
+@media (max-width: 992px) {
+	.body-left {
+		margin-bottom: 32px;
+	}
+	.body-right {
+		margin-top: 32px !important;
+	}
+	.cur-song-list {
+		/* margin: auto 16px; */
+	}
+}
